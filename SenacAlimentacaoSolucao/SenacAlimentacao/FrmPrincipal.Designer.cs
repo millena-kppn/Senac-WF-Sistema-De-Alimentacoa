@@ -1,0 +1,140 @@
+﻿namespace SenacAlimentacao
+{
+    partial class FrmPrincipal
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            groupBox1 = new GroupBox();
+            btnCardapio = new Button();
+            btnComanda = new Button();
+            btnPedidoCozinha = new Button();
+            btnUsuarios = new Button();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(btnUsuarios);
+            groupBox1.Controls.Add(btnPedidoCozinha);
+            groupBox1.Controls.Add(btnComanda);
+            groupBox1.Controls.Add(btnCardapio);
+            groupBox1.ForeColor = Color.White;
+            groupBox1.Location = new Point(12, 71);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(776, 312);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Escolha seu serviço";
+            // 
+            // btnCardapio
+            // 
+            btnCardapio.BackColor = Color.FromArgb(255, 255, 128);
+            btnCardapio.FlatAppearance.BorderSize = 0;
+            btnCardapio.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            btnCardapio.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnCardapio.FlatStyle = FlatStyle.Flat;
+            btnCardapio.Font = new Font("Segoe UI", 16F);
+            btnCardapio.ForeColor = Color.White;
+            btnCardapio.Location = new Point(34, 76);
+            btnCardapio.Name = "btnCardapio";
+            btnCardapio.Size = new Size(159, 164);
+            btnCardapio.TabIndex = 0;
+            btnCardapio.Text = "Cardápio";
+            btnCardapio.UseVisualStyleBackColor = false;
+            // 
+            // btnComanda
+            // 
+            btnComanda.BackColor = Color.FromArgb(128, 255, 128);
+            btnComanda.FlatAppearance.BorderSize = 0;
+            btnComanda.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            btnComanda.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnComanda.FlatStyle = FlatStyle.Flat;
+            btnComanda.Font = new Font("Segoe UI", 15F);
+            btnComanda.ForeColor = Color.White;
+            btnComanda.Location = new Point(218, 76);
+            btnComanda.Name = "btnComanda";
+            btnComanda.Size = new Size(159, 164);
+            btnComanda.TabIndex = 0;
+            btnComanda.Text = "Comanda";
+            btnComanda.UseVisualStyleBackColor = false;
+            // 
+            // btnPedidoCozinha
+            // 
+            btnPedidoCozinha.BackColor = Color.FromArgb(128, 128, 255);
+            btnPedidoCozinha.FlatAppearance.BorderSize = 0;
+            btnPedidoCozinha.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            btnPedidoCozinha.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnPedidoCozinha.FlatStyle = FlatStyle.Flat;
+            btnPedidoCozinha.Font = new Font("Segoe UI", 16F);
+            btnPedidoCozinha.ForeColor = Color.White;
+            btnPedidoCozinha.Location = new Point(398, 76);
+            btnPedidoCozinha.Name = "btnPedidoCozinha";
+            btnPedidoCozinha.Size = new Size(159, 164);
+            btnPedidoCozinha.TabIndex = 0;
+            btnPedidoCozinha.Text = "Pedido Cozinha";
+            btnPedidoCozinha.UseVisualStyleBackColor = false;
+            // 
+            // btnUsuarios
+            // 
+            btnUsuarios.BackColor = Color.FromArgb(255, 128, 128);
+            btnUsuarios.FlatAppearance.BorderSize = 0;
+            btnUsuarios.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            btnUsuarios.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnUsuarios.FlatStyle = FlatStyle.Flat;
+            btnUsuarios.Font = new Font("Segoe UI", 16F);
+            btnUsuarios.ForeColor = Color.White;
+            btnUsuarios.Location = new Point(578, 76);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.Size = new Size(159, 164);
+            btnUsuarios.TabIndex = 0;
+            btnUsuarios.Text = "Usuários";
+            btnUsuarios.UseVisualStyleBackColor = false;
+            // 
+            // FrmPrincipal
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(800, 450);
+            Controls.Add(groupBox1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FrmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FrmPrincipal";
+            groupBox1.ResumeLayout(false);
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private GroupBox groupBox1;
+        private Button btnCardapio;
+        private Button btnUsuarios;
+        private Button btnPedidoCozinha;
+        private Button btnComanda;
+    }
+}
