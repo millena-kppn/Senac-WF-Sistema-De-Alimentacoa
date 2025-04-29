@@ -49,6 +49,7 @@
             // 
             // panel2
             // 
+            panel2.BackColor = Color.FromArgb(64, 64, 64);
             panel2.Controls.Add(btnEntrar);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(txtLogin);
@@ -64,7 +65,7 @@
             // 
             btnEntrar.FlatAppearance.BorderSize = 0;
             btnEntrar.FlatAppearance.MouseDownBackColor = Color.White;
-            btnEntrar.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
+            btnEntrar.FlatAppearance.MouseOverBackColor = Color.Silver;
             btnEntrar.FlatStyle = FlatStyle.Flat;
             btnEntrar.Font = new Font("Segoe UI", 16F);
             btnEntrar.ForeColor = Color.White;
@@ -77,7 +78,7 @@
             // 
             // textBox1
             // 
-            textBox1.BackColor = Color.FromArgb(192, 64, 0);
+            textBox1.BackColor = Color.FromArgb(64, 64, 64);
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 16F);
             textBox1.ForeColor = Color.White;
@@ -89,7 +90,7 @@
             // 
             // txtLogin
             // 
-            txtLogin.BackColor = Color.FromArgb(192, 64, 0);
+            txtLogin.BackColor = Color.FromArgb(64, 64, 64);
             txtLogin.BorderStyle = BorderStyle.None;
             txtLogin.Font = new Font("Segoe UI", 16F);
             txtLogin.ForeColor = Color.White;
@@ -125,7 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(192, 64, 0);
+            BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(800, 450);
             Controls.Add(panel2);
             Controls.Add(panel1);

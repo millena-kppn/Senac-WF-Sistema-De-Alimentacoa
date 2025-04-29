@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            btnCardapio = new Button();
-            btnComanda = new Button();
-            btnPedidoCozinha = new Button();
             btnUsuarios = new Button();
+            btnPedidoCozinha = new Button();
+            btnComanda = new Button();
+            btnCardapio = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,37 +50,21 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Escolha seu serviço";
             // 
-            // btnCardapio
+            // btnUsuarios
             // 
-            btnCardapio.BackColor = Color.FromArgb(255, 255, 128);
-            btnCardapio.FlatAppearance.BorderSize = 0;
-            btnCardapio.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
-            btnCardapio.FlatAppearance.MouseOverBackColor = Color.Gray;
-            btnCardapio.FlatStyle = FlatStyle.Flat;
-            btnCardapio.Font = new Font("Segoe UI", 16F);
-            btnCardapio.ForeColor = Color.White;
-            btnCardapio.Location = new Point(34, 76);
-            btnCardapio.Name = "btnCardapio";
-            btnCardapio.Size = new Size(159, 164);
-            btnCardapio.TabIndex = 0;
-            btnCardapio.Text = "Cardápio";
-            btnCardapio.UseVisualStyleBackColor = false;
-            // 
-            // btnComanda
-            // 
-            btnComanda.BackColor = Color.FromArgb(128, 255, 128);
-            btnComanda.FlatAppearance.BorderSize = 0;
-            btnComanda.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
-            btnComanda.FlatAppearance.MouseOverBackColor = Color.Gray;
-            btnComanda.FlatStyle = FlatStyle.Flat;
-            btnComanda.Font = new Font("Segoe UI", 15F);
-            btnComanda.ForeColor = Color.White;
-            btnComanda.Location = new Point(218, 76);
-            btnComanda.Name = "btnComanda";
-            btnComanda.Size = new Size(159, 164);
-            btnComanda.TabIndex = 0;
-            btnComanda.Text = "Comanda";
-            btnComanda.UseVisualStyleBackColor = false;
+            btnUsuarios.BackColor = Color.FromArgb(255, 128, 128);
+            btnUsuarios.FlatAppearance.BorderSize = 0;
+            btnUsuarios.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            btnUsuarios.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnUsuarios.FlatStyle = FlatStyle.Flat;
+            btnUsuarios.Font = new Font("Segoe UI", 16F);
+            btnUsuarios.ForeColor = Color.Black;
+            btnUsuarios.Location = new Point(578, 76);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.Size = new Size(159, 164);
+            btnUsuarios.TabIndex = 0;
+            btnUsuarios.Text = "Usuários";
+            btnUsuarios.UseVisualStyleBackColor = false;
             // 
             // btnPedidoCozinha
             // 
@@ -90,7 +74,7 @@
             btnPedidoCozinha.FlatAppearance.MouseOverBackColor = Color.Gray;
             btnPedidoCozinha.FlatStyle = FlatStyle.Flat;
             btnPedidoCozinha.Font = new Font("Segoe UI", 16F);
-            btnPedidoCozinha.ForeColor = Color.White;
+            btnPedidoCozinha.ForeColor = Color.Black;
             btnPedidoCozinha.Location = new Point(398, 76);
             btnPedidoCozinha.Name = "btnPedidoCozinha";
             btnPedidoCozinha.Size = new Size(159, 164);
@@ -98,21 +82,37 @@
             btnPedidoCozinha.Text = "Pedido Cozinha";
             btnPedidoCozinha.UseVisualStyleBackColor = false;
             // 
-            // btnUsuarios
+            // btnComanda
             // 
-            btnUsuarios.BackColor = Color.FromArgb(255, 128, 128);
-            btnUsuarios.FlatAppearance.BorderSize = 0;
-            btnUsuarios.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
-            btnUsuarios.FlatAppearance.MouseOverBackColor = Color.Gray;
-            btnUsuarios.FlatStyle = FlatStyle.Flat;
-            btnUsuarios.Font = new Font("Segoe UI", 16F);
-            btnUsuarios.ForeColor = Color.White;
-            btnUsuarios.Location = new Point(578, 76);
-            btnUsuarios.Name = "btnUsuarios";
-            btnUsuarios.Size = new Size(159, 164);
-            btnUsuarios.TabIndex = 0;
-            btnUsuarios.Text = "Usuários";
-            btnUsuarios.UseVisualStyleBackColor = false;
+            btnComanda.BackColor = Color.FromArgb(128, 255, 128);
+            btnComanda.FlatAppearance.BorderSize = 0;
+            btnComanda.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            btnComanda.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnComanda.FlatStyle = FlatStyle.Flat;
+            btnComanda.Font = new Font("Segoe UI", 15F);
+            btnComanda.ForeColor = Color.Black;
+            btnComanda.Location = new Point(218, 76);
+            btnComanda.Name = "btnComanda";
+            btnComanda.Size = new Size(159, 164);
+            btnComanda.TabIndex = 0;
+            btnComanda.Text = "Comanda";
+            btnComanda.UseVisualStyleBackColor = false;
+            // 
+            // btnCardapio
+            // 
+            btnCardapio.BackColor = Color.FromArgb(255, 255, 128);
+            btnCardapio.FlatAppearance.BorderSize = 0;
+            btnCardapio.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            btnCardapio.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnCardapio.FlatStyle = FlatStyle.Flat;
+            btnCardapio.Font = new Font("Segoe UI", 16F);
+            btnCardapio.ForeColor = Color.Black;
+            btnCardapio.Location = new Point(34, 76);
+            btnCardapio.Name = "btnCardapio";
+            btnCardapio.Size = new Size(159, 164);
+            btnCardapio.TabIndex = 0;
+            btnCardapio.Text = "Cardápio";
+            btnCardapio.UseVisualStyleBackColor = false;
             // 
             // FrmPrincipal
             // 
