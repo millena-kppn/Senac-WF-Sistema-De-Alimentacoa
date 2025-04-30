@@ -33,6 +33,8 @@
             btnPedidoCozinha = new Button();
             btnComanda = new Button();
             btnCardapio = new Button();
+            btnFecharOpcoes = new Button();
+            btnMinimizarOpcoes = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -42,6 +44,7 @@
             groupBox1.Controls.Add(btnPedidoCozinha);
             groupBox1.Controls.Add(btnComanda);
             groupBox1.Controls.Add(btnCardapio);
+            groupBox1.Font = new Font("Segoe UI", 16F);
             groupBox1.ForeColor = Color.White;
             groupBox1.Location = new Point(12, 71);
             groupBox1.Name = "groupBox1";
@@ -63,8 +66,9 @@
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Size = new Size(159, 164);
             btnUsuarios.TabIndex = 0;
-            btnUsuarios.Text = "Usuários";
+            btnUsuarios.Text = "Usuário";
             btnUsuarios.UseVisualStyleBackColor = false;
+            btnUsuarios.Click += btnUsuarios_Click;
             // 
             // btnPedidoCozinha
             // 
@@ -81,6 +85,7 @@
             btnPedidoCozinha.TabIndex = 0;
             btnPedidoCozinha.Text = "Pedido Cozinha";
             btnPedidoCozinha.UseVisualStyleBackColor = false;
+            btnPedidoCozinha.Click += btnPedidoCozinha_Click;
             // 
             // btnComanda
             // 
@@ -97,6 +102,7 @@
             btnComanda.TabIndex = 0;
             btnComanda.Text = "Comanda";
             btnComanda.UseVisualStyleBackColor = false;
+            btnComanda.Click += btnComanda_Click;
             // 
             // btnCardapio
             // 
@@ -113,13 +119,43 @@
             btnCardapio.TabIndex = 0;
             btnCardapio.Text = "Cardápio";
             btnCardapio.UseVisualStyleBackColor = false;
+            btnCardapio.Click += btnCardapio_Click;
+            // 
+            // btnFecharOpcoes
+            // 
+            btnFecharOpcoes.BackColor = Color.Black;
+            btnFecharOpcoes.FlatAppearance.BorderSize = 0;
+            btnFecharOpcoes.ForeColor = Color.White;
+            btnFecharOpcoes.Location = new Point(757, 2);
+            btnFecharOpcoes.Name = "btnFecharOpcoes";
+            btnFecharOpcoes.Size = new Size(41, 34);
+            btnFecharOpcoes.TabIndex = 4;
+            btnFecharOpcoes.Text = "X";
+            btnFecharOpcoes.UseVisualStyleBackColor = false;
+            btnFecharOpcoes.Click += btnFecharOpcoes_Click;
+            // 
+            // btnMinimizarOpcoes
+            // 
+            btnMinimizarOpcoes.BackColor = Color.Black;
+            btnMinimizarOpcoes.FlatAppearance.BorderSize = 0;
+            btnMinimizarOpcoes.Font = new Font("Segoe UI", 5F);
+            btnMinimizarOpcoes.ForeColor = Color.White;
+            btnMinimizarOpcoes.Location = new Point(710, 2);
+            btnMinimizarOpcoes.Name = "btnMinimizarOpcoes";
+            btnMinimizarOpcoes.Size = new Size(41, 34);
+            btnMinimizarOpcoes.TabIndex = 5;
+            btnMinimizarOpcoes.Text = "___";
+            btnMinimizarOpcoes.UseVisualStyleBackColor = false;
+            btnMinimizarOpcoes.Click += btnMinimizarOpcoes_Click;
             // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 512);
+            Controls.Add(btnMinimizarOpcoes);
+            Controls.Add(btnFecharOpcoes);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmPrincipal";
@@ -136,5 +172,7 @@
         private Button btnUsuarios;
         private Button btnPedidoCozinha;
         private Button btnComanda;
+        private Button btnFecharOpcoes;
+        private Button btnMinimizarOpcoes;
     }
 }

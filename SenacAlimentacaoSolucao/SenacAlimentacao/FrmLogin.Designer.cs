@@ -28,19 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             panel1 = new Panel();
             panel2 = new Panel();
+            btnFecharLogin = new Button();
             btnEntrar = new Button();
-            textBox1 = new TextBox();
+            txtSenha = new TextBox();
             txtLogin = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            imageList1 = new ImageList(components);
+            imageList2 = new ImageList(components);
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -50,8 +59,9 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(64, 64, 64);
+            panel2.Controls.Add(btnFecharLogin);
             panel2.Controls.Add(btnEntrar);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtSenha);
             panel2.Controls.Add(txtLogin);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
@@ -60,6 +70,19 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(530, 450);
             panel2.TabIndex = 1;
+            // 
+            // btnFecharLogin
+            // 
+            btnFecharLogin.BackColor = Color.FromArgb(64, 64, 64);
+            btnFecharLogin.FlatAppearance.BorderSize = 0;
+            btnFecharLogin.ForeColor = Color.White;
+            btnFecharLogin.Location = new Point(489, 0);
+            btnFecharLogin.Name = "btnFecharLogin";
+            btnFecharLogin.Size = new Size(41, 34);
+            btnFecharLogin.TabIndex = 3;
+            btnFecharLogin.Text = "X";
+            btnFecharLogin.UseVisualStyleBackColor = false;
+            btnFecharLogin.Click += btnFecharLogin_Click;
             // 
             // btnEntrar
             // 
@@ -75,18 +98,19 @@
             btnEntrar.TabIndex = 2;
             btnEntrar.Text = "Entrar";
             btnEntrar.UseVisualStyleBackColor = true;
+            btnEntrar.Click += btnEntrar_Click;
             // 
-            // textBox1
+            // txtSenha
             // 
-            textBox1.BackColor = Color.FromArgb(64, 64, 64);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 16F);
-            textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(103, 209);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(424, 43);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "SENHA";
+            txtSenha.BackColor = Color.FromArgb(64, 64, 64);
+            txtSenha.BorderStyle = BorderStyle.None;
+            txtSenha.Font = new Font("Segoe UI", 16F);
+            txtSenha.ForeColor = Color.White;
+            txtSenha.Location = new Point(103, 209);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(424, 43);
+            txtSenha.TabIndex = 0;
+            txtSenha.Text = "SENHA";
             // 
             // txtLogin
             // 
@@ -122,6 +146,28 @@
             label1.TabIndex = 1;
             label1.Text = "_______________________________";
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
+            // 
+            // imageList2
+            // 
+            imageList2.ColorDepth = ColorDepth.Depth32Bit;
+            imageList2.ImageSize = new Size(16, 16);
+            imageList2.TransparentColor = Color.Transparent;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 84);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(244, 283);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -134,8 +180,10 @@
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -145,8 +193,12 @@
         private Panel panel2;
         private TextBox txtLogin;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtSenha;
         private Label label2;
         private Button btnEntrar;
+        private Button btnFecharLogin;
+        private ImageList imageList1;
+        private ImageList imageList2;
+        private PictureBox pictureBox1;
     }
 }
