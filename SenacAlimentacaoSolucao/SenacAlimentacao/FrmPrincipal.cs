@@ -12,13 +12,15 @@ namespace SenacAlimentacao
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+        public FrmPrincipal(string nome, string senha)
         {
             InitializeComponent();
+            //exibe o nome do usuraio na tela principal
+            lblMensagem.Text = "Bem vindo " + nome;
         }
         private void btnFecharOpcoes_Click(object sender, EventArgs e)
         {
-            // Fecha a tela principal
+            //fecha a tela principal
             Close();
             //cria uma instância do formulário de login
             var frmLogin = new FrmLogin();

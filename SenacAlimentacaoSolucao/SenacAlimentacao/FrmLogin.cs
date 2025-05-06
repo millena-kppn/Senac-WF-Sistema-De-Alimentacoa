@@ -12,7 +12,7 @@ namespace SenacAlimentacao
             //ocultar o formulário FrmLogin
             this.Hide();
             //criar uma instância do formulário FrmPrincipal
-            var frmPrincipal = new FrmPrincipal();
+            var frmPrincipal = new FrmPrincipal(txtLogin.Text, txtSenha.Text);
             //exibir o formulário FrmPrincipal
             frmPrincipal.Show();
         }
