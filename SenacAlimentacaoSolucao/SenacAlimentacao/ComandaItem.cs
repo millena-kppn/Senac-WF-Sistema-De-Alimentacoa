@@ -8,13 +8,11 @@ using System.Threading.Tasks;
 
 namespace SenacAlimentacao;
 
-public class Comanda
+public class ComandaItem
 {
     [Key] // Chave primária para o pedido de cozinha
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Gera automaticamente o valor da chave primária
-    public int Id { get; set; } // Identificador único da comanda
-    public int NumerosMesa { get; set; } // Número da mesa associada à comanda
-    public int NomeCliente{ get; set; } // Nome do cliente associado à comanda
-    public int SituacaoComanda { get; set; }// Situação da comanda (0 - Aberta, 1 - Fechada, 2 - Cancelada)
-
+    public int Id { get; set; } //id do item da comanda
+    public int ComandaId { get; set; } //id da comanda associada
+    public int CardapioItemId { get; set; } //id do item do cardápio associado à comanda
 }
